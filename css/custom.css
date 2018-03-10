@@ -1,0 +1,368 @@
+*html,*body{
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu > .dropdown {
+    position: relative;
+}
+
+.dropdown-menu > .dropdown a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: .9rem;
+    top: .9rem;
+}
+
+.dropdown-menu > .dropdown .dropdown-menu {
+    top: -.7rem;
+    left: 100%;
+    border-radius: 0 .25rem .25rem .25rem;
+}
+
+
+
+/*section-1 start
+=============================*/
+
+.section-1 {
+    margin-top: 4em;
+    background: orangered;
+    padding: 6em;
+}
+
+.display-5 {
+    color: #ffffff;
+
+}
+
+/*section-2 start
+===========================*/
+
+.section-2 {
+    padding: 5em 0;
+    /*background:#800080;*/
+
+}
+
+.fiber__image {
+    /height: 200px;
+    background-color: #ddd;
+    /*margin-bottom: 20px;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    box-shadow: 0 10px 40px #e3e3e3;
+    /*margin-bottom: 35px;*/
+
+}
+
+.fiber__image img {
+    /*border-radius: 5px;*/
+
+}
+
+.fiber__title {
+    color: #423030;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.12);
+}
+
+.fiber__body {
+    text-align: justify;
+}
+
+
+
+/*section-3 start
+===============================
+*/
+
+.section-3 {
+    background: #f9fafa;
+    padding: 2em 0 5em;
+}
+
+
+/*section-4 start
+===============================
+*/
+
+.section-4 {
+    /*background: #f9fafa;*/
+    padding: 4em 0;
+    background: #90e290;
+    position: relative;
+}
+.section-4::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 60px solid #f9fafa;
+    border-left: 60px solid #90e290;
+    width: 0;
+}
+
+.section-4::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    border-bottom: 60px solid #ffffff;
+    border-right: 60px solid #90e290;
+    width: 0;
+}
+
+.section-4 .fiber__title {
+    color: #ffffff;
+}
+
+
+/*section-5 start
+==============================*/
+.section-5 {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+/*.section-5:hover {*/
+    /*background: #fff;*/
+    /*color: #333;*/
+    /*box-shadow: 0 16px 30px #e9e9e9;*/
+/*}*/
+
+
+/*section-6 start
+==============================*/
+.section-6 {
+    padding: 4em;
+    background: mediumpurple;
+    margin: 2em 0;
+    color: #ffffff;
+}
+
+.section-6 .fiber__title {
+    color: #ffffff;
+}
+
+
+/*section-7 start
+==============================*/
+.section-7 {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+
+
+/*section-bottom start
+==============================*/
+
+.section-bottom {
+    background: #333;
+    padding: 2em;
+}
+
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+/* End Fonts */
+/* Start Global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* End Global rules */
+
+/* Start body rules */
+body {
+    /*background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);*/
+    /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+
+    font-family: 'Vibur', cursive;
+    /*   the main font */
+    font-family: 'Abel', sans-serif;
+    opacity: .95;
+    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||*/
+/* //////////////////////////////////////////// */
+
+
+
+
+/* End body rules */
+
+/* Start form  attributes */
+.contact-form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+/* form Container */
+.contact-form .con {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+header p {letter-spacing: 0.05em;}
+
+
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+/* Show/hide password Font Icon */
+#eye {
+    background: #fff;
+    color: #333;
+
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 240px;
+    height: 50px;
+
+    margin-top: 2%;
+    padding: 15px;
+
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+
+    outline: none;
+    border: none;
+
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+/* input[type="text"] {min-width: 250px;} */
+/* buttons  */
+button {
+    display: inline-block;
+    color: #252537;
+
+    width: 280px;
+    height: 50px;
+
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background: #B8F2E6;}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+/*section footer start
+================================*/
+.section-footer {
+    background: #000;
+    padding: 1em;
+    color: #ffffff;
+}
+
+.section-footer>p {
+    font-size: 14px;
+}
