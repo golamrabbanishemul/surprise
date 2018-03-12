@@ -8,16 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <title>Hello, world!</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm lg-light navbar-light fixed-top">
+<nav class="navbar navbar-expand-sm lg-light navbar-light fixed-top navbar-custom">
     <!-- Brand -->
     <a class="navbar-brand" href="#">Logo</a>
 
     <!-- Links -->
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link" href="#">HOME</a>
         </li>
@@ -32,7 +33,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li class="dropdown">
                     <a class="dropdown-item" href="#">TELECOMMUNICATION</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropleft">
                         <li><a class="dropdown-item" href="#">UNDERGROUND FIBER LAYING SERVICES</a></li>
                         <li><a class="dropdown-item" href="#">UNDERGROUND OPTICAL FIBER CABLE</a></li>
                         <li><a class="dropdown-item" href="#">FIBER ACCESSORIES</a></li>
@@ -50,8 +51,7 @@
 <div class="section-1">
     <div class="container-fluid">
         <div class="row">
-
-            <h1 class="display-5 text-center">Welcome to Sarface Communication</h1>
+            <h1 class="display-5 text-center">Welcome to Surprise Communication</h1>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto doloribus
                 fugit
                 iure neque nobis sequi voluptas voluptate. Asperiores culpa, dolorem illo labore laborum minima neque
@@ -66,18 +66,9 @@
 <div class="section-2">
     <div class="container">
         <div class="row">
-
             <div class="col">
-                <div class="fiber">
-                    <div class="fiber__image">
-                        <img src="images/11.jpg" class="img-fluid rounded" alt="fiber laying">
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="fiber__title">
+                <div class="fiber__title bar">
                     UNDERGROUND FIBER LAYING SERVICES
-
                 </div>
                 <div class="fiber__body">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo maxime nesciunt
@@ -86,8 +77,15 @@
                     sequi unde
                     veritatis?
                     <span>
-                        <button type="button" class="btn btn-outline-info float-right">MORE</button>
+                        <button type="button" class="btn btn-outline-info float-left more">MORE</button>
                     </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fiber">
+                    <div class="fiber__image">
+                        <img src="images/11.jpg" class="img-fluid rounded" alt="fiber laying">
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,28 +95,27 @@
 <div class="section-3">
     <div class="container">
         <div class="row">
-
             <div class="col">
-                <div class="fiber">
-                    <div class="fiber__image">
-                        <img src="images/12.jpg" class="img-fluid rounded" alt="fiber laying">
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="fiber__title">
+                <div class="optical__title bar">
                     UNDERGROUND OPTICAL FIBER CABLE
 
                 </div>
-                <div class="fiber__body">
+                <div class="optical__body">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo maxime nesciunt
                     officiis tempora.
                     Aperiam architecto aut esse expedita ipsum iste minus non, odit officia, quaerat reiciendis
                     sequi unde
                     veritatis?
                     <span>
-                        <button type="button" class="btn btn-outline-info float-right">MORE</button>
+                        <button type="button" class="btn btn-outline-light float-left more">MORE</button>
                     </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="optical">
+                    <div class="optical__image">
+                        <img src="images/12.jpg" class="img-fluid rounded" alt="fiber laying">
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,16 +125,8 @@
 <div class="section-4">
     <div class="container">
         <div class="row">
-
             <div class="col">
-                <div class="fiber">
-                    <div class="fiber__image">
-                        <img src="images/13.png" class="img-fluid rounded" alt="fiber laying">
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="fiber__title">
+                <div class="fiber__title bar">
                     FIBER ACCESSORIES
 
                 </div>
@@ -148,8 +137,15 @@
                     sequi unde
                     veritatis?
                     <span>
-                        <button type="button" class="btn btn-outline-default float-right">MORE</button>
+                        <button type="button" class="btn btn-outline-default float-left more">MORE</button>
                     </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fiber">
+                    <div class="fiber__image">
+                        <img src="images/13.png" class="img-fluid rounded" alt="fiber laying">
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,26 +157,27 @@
         <div class="row">
 
             <div class="col-sm-6">
-                <div class="fiber">
-                    <div class="fiber__image">
-                        <img src="images/14.png" class="img-fluid rounded" alt="fiber laying">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="fiber__title">
+                <div class="hardware__title bar">
                     HARDWARE ADN SOFTWARE
 
                 </div>
-                <div class="fiber__body">
+                <div class="hardware__body">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo maxime nesciunt
                     officiis tempora.
                     Aperiam architecto aut esse expedita ipsum iste minus non, odit officia, quaerat reiciendis
                     sequi unde
                     veritatis?
                     <span>
-                        <button type="button" class="btn btn-outline-info float-right">MORE</button>
+                        <button type="button" class="btn btn-outline-light float-left more">MORE</button>
                     </span>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="hardware">
+                    <div class="hardware__image">
+                        <img src="images/14.png" class="img-fluid rounded" alt="fiber laying">
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,28 +187,27 @@
 <div class="section-6">
     <div class="container">
         <div class="row">
-
             <div class="col-sm-6">
-                <div class="fiber">
-                    <div class="fiber__image">
-                        <img src="images/15.jpg" class="img-fluid rounded" alt="fiber laying">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="fiber__title">
+                <div class="surveillance__title bar">
                     SURVEILLANCE SYSTEM
 
                 </div>
-                <div class="fiber__body">
+                <div class="surveillance__body">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo maxime nesciunt
                     officiis tempora.
                     Aperiam architecto aut esse expedita ipsum iste minus non, odit officia, quaerat reiciendis
                     sequi unde
                     veritatis?
                     <span>
-                        <button type="button" class="btn btn-outline-default float-right">MORE</button>
+                        <button type="button" class="btn btn-outline-default float-left more">MORE</button>
                     </span>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="fiber">
+                    <div class="surveillance__image">
+                        <img src="images/15.jpg" class="img-fluid rounded" alt="fiber laying">
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,26 +219,26 @@
         <div class="row">
 
             <div class="col-sm-6">
-                <div class="fiber">
-                    <div class="fiber__image">
-                        <img src="images/16.jpg" class="img-fluid rounded" alt="fiber laying">
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="fiber__title">
+                <div class="construction__title bar">
                     CONSTRUCTION
 
                 </div>
-                <div class="fiber__body">
+                <div class="construction__body">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo maxime nesciunt
                     officiis tempora.
                     Aperiam architecto aut esse expedita ipsum iste minus non, odit officia, quaerat reiciendis
                     sequi unde
                     veritatis?
                     <span>
-                        <button type="button" class="btn btn-outline-info float-right">MORE</button>
+                        <button type="button" class="btn btn-outline-light float-left more">MORE</button>
                     </span>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="construction">
+                    <div class="construction__image">
+                        <img src="images/16.jpg" class="img-fluid rounded" alt="fiber laying">
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,88 +248,58 @@
 <div class="section-bottom">
     <div class="container-fluid">
         <div class="row">
-        <div class="col-sm-6">
-            <form action="" class="contact-form">
-                <div class="con">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control input-xs">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control input-xm">
-                </div>
-                <div class="form-group">
-                    <label for="message">Email</label>
-                    <textarea name="message" id="message" class="form-control " cols="30" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Send" class="btn btn-light btn-sm">
-                </div>
-                </div>
-            </form>
+            <div class="col-sm-4">
+                <div class="footer-widget about-widget">
+                    <h3 class="title">Contact Us</h3>
+                    <p>We are a leading end-to-end infrastructure support provider having Nationwide Telecommunication
+                        Transmission Network.</p>
+                    <ul class="contact">
+                        <li><i class="fa fa-map-marker"></i> <span>18, Karwan Bazar Commercial Area
+        Dhaka -1205, Bangladesh.</span></li>
+                        <li><i class="fa fa-phone"></i> <span>+880 2 222333444-5 </span></li>
+                        <li><i class="fa fa-envelope-o"></i> <span>info@surprisecommunications.net </span></li>
+                    </ul>
 
-<!--            https://codepen.io/linux/pen/LLVaqx-->
-<!--            <form>-->
-<!--                <!--   con = Container  for items in the form-->
-<!--                <div class="con">-->
-<!--                    <!--     Start  header Content  -->
-<!--                    <header class="head-form">-->
-<!--                        <h2>Log In</h2>-->
-<!--                        <!--     A welcome message or an explanation of the login form -->-->
-<!--                        <p>login here using your username and password</p>-->
-<!--                    </header>-->
-<!--                    <!--     End  header Content  -->
-<!--                    <br>-->
-<!--                    <div class="field-set">-->
-<!---->
-<!--                        <!--   user name -->
-<!--                        <span class="input-item">-->
-<!--           <i class="fa fa-user-circle"></i>-->
-<!--         </span>-->
-<!--                        <!--   user name Input-->
-<!--                        <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>-->
-<!---->
-<!--                        <br>-->
-<!---->
-<!--                        <!--   Password -->
-<!---->
-<!--                        <span class="input-item">-->
-<!--        <i class="fa fa-key"></i>-->
-<!--       </span>-->
-<!--                        <!--   Password Input-->
-<!--                        <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>-->
-<!---->
-<!--                        <!--      Show/hide password  -->
-<!--                        <span>-->
-<!--        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>-->
-<!--     </span>-->
-<!---->
-<!---->
-<!--                        <br>-->
-<!--                        <!--        buttons -->
-<!--                        <!--      button LogIn -->
-<!--                        <button class="log-in"> Log In </button>-->
-<!--                    </div>-->
-<!---->
-<!--                    <!--   other buttons -->
-<!--                    <div class="other">-->
-<!--                        <!--      Forgot Password button-->
-<!--                        <button class="btn submits frgt-pass">Forgot Password</button>-->
-<!--                        <!--     Sign Up button -->
-<!--                        <button class="btn submits sign-up">Sign Up-->
-<!--                            <!--         Sign Up font icon -->
-<!--                            <i class="fa fa-user-plus" aria-hidden="true"></i>-->
-<!--                        </button>-->
-<!--                        <!--      End Other the Division -->
-<!--                    </div>-->
-<!---->
-<!--                    <!--   End Conrainer  -->
-<!--                </div>-->
-<!---->
-<!--                <!-- End Form -->
-<!--            </form>-->
-        </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="footer-widget">
+                <h3 class="title">Contact With Social</h3>
+                <ul class="social">
+                    <li> <a target="_Blank" href="https://www.facebook.com/"> <i class="fa fa-facebook"></i></a> Facebook</li>
+                    <li><a target="_Blank" href="#"><i class="fa fa-linkedin"></i></a> Linkedin</li>
+                    <li><a target="_Blank" href="#"><i class="fa fa-twitter"></i></a> Twitter</li>
+
+                    <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a> Google-Plus</li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a> Pinterest</li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a> Youtube</li> -->
+                </ul>
+            </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="bottom-title text-center">Any query</div>
+                <form action="" class="contact-form">
+                    <div class="con">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control inputfield">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control inputfield">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" id="message" class="form-control form-textarea"
+                                      rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send" class="btn btn-light btn-sm more">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
 </div><!-- section-bottom -->
