@@ -1,102 +1,67 @@
-*html,*body{
-    margin: 0;
-    padding: 0;
+html,body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.dropdown-menu > .dropdown {
-    position: relative;
+/* NAVBAR */
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(64, 64, 64);
+}
+.btco-menu li > a {
+    padding: 10px 15px;
+    color: #000;
+
 }
 
-.dropdown-menu > .dropdown a::after {
+.btco-menu .active a:focus,
+.btco-menu li a:focus ,
+.navbar > .show > a:focus{
+    background: transparent;
+    outline: 0;
+}
+
+
+.dropdown-menu .show > .dropdown-toggle::after{
     transform: rotate(-90deg);
-    position: absolute;
-    right: .9rem;
-    top: .9rem;
-}
-
-.dropdown-menu > .dropdown .dropdown-menu {
-    top: -.7rem;
-    left: 100%;
-    border-radius: 0 .25rem .25rem .25rem;
 }
 
 
+nav{
+  border-top: 5px solid #007bff;
+}
 
+.navbar-toggler {
+    border-color: #007bff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 123, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 .navbar-custom {
     background: #ffffff;
     border-top: 5px solid cornflowerblue;
-    box-shadow: 0 0 6px rgba(0,0,0,0.3)
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #2277d8;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3)
 }
 
 a.nav-link:hover {
     border-top: 5px solid #81d742;
     margin: 0;
-    padding-top: 24px;
-    margin-top: -17px;
+    padding-top: 16px;
+    margin-top: -13px;
 
 }
-
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #226ece;
 }
+/* NAVBAR END
+=====================================*/
 
-/*section-1 start
-=============================*/
-
-.section-1 {
-    margin-top: 2em;
-    background: #fff;
-    color: #000;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.12);
-    padding: 6em;
-    font-family: 'Roboto', sans-serif;
+.section-title{
+  font-size: 1.8em;
 }
 
-
-
-.display-5 {
-    color: #000000;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.12);
-text-transform: uppercase;
-}
-
-
-/*section-2 start
-===========================*/
-
-.section-2 {
-    padding: 3em 0;
-    /*background:#800080;*/
-    background: rgba(6,66,173, 0.7);
-
-}
-
-.fiber__image {
-    background-color: #ddd;
-    box-shadow: 0 10px 40px #e3e3e3;
-
-}
-
-
-.fiber__title {
-    color: #ffffff;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.12);
-}
-
-.fiber__body {
-    text-align: justify;
-}
-
-.bar::before {
-
-}
 .bar::before {
     content: '';
     position: absolute;
@@ -109,267 +74,39 @@ text-transform: uppercase;
     left: -22px;
 }
 
-
-
-/*section-3 start
-===============================
-*/
-
-.section-3 {
-    background: #333333;
-    color: #a4a4a4;
-    padding: 3em 0;
-    /*margin: 1em 0;*/
+@media only screen and (max-width: 480px) {
+  .bar::before {
+    display: none;
+  }
 }
 
-.optical__title {
-    color: #ffffff;
-    font-size: 1.5em;
+/*  section7*/
+.section7{
+  background: url('../images/ct_bg.png') no-repeat;
+  position: relative;
+  background-size: cover;
 }
-.optical__image {
-    width:540px;
-    height: 259px;
-}
+/*  section7 end*/
 
-.optical__image img {
-    width: 100%;
-    height: 100%;
-}
-
-.more {
-    margin: 0.8em 0;
-}
-
-
-/*section-4 start
-===============================
-*/
-
-.section-4 {
-    /*background: #f9fafa;*/
-    padding: 3em 0;
-    /*background: #90e290;*/
-    /*position: relative;*/
-}
-.fiber_accs__title {
-    color: #000000;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.12);
-}
-
-.fiber_accs__image {
-    width:540px;
-    height: 259px;
-}
-
-.fiber_accs__image img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/*section-5 start
-==============================*/
-.section-5 {
-    padding: 2em 0;
-    margin: 1em 0;
-    background: #333333;
-    color: #ffffff;
-}
-
-.hardware__title {
-    font-size: 1.5em;
-}
-
-.hardware__image {
-    width:540px;
-    height: 259px;
-}
-
-.hardware__image img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/*section-6 start
-==============================*/
-.section-6 {
-    padding: 3em 0;
-    margin: 1em 0;
-
-}
-
-.surveillance__title {
-    font-size: 1.5em;
-    color: #000000;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.12);
-}
-
-.surveillance__image {
-    background-color: #ddd;
-    box-shadow: 0 10px 40px #e3e3e3;
-    width: 540px;
-    height: 259px;
-}
-
-.surveillance__image img {
-    width: 100%;
-    height: 100%;
-}
-
-/*section-7 start
-==============================*/
-.section-7 {
-    padding: 2em 0;
-    margin: 1em 0 0;
-    background: #333333 url("../images/ct_bg.png");
-    background-size: cover;position: relative;
-    color: #ffffff;
-}
-.construction {
-    /*background: #0004;*/
-}
-
-.construction__title {
-    font-size: 1.5em;
-    color: #ffffff;
-}
-
-.construction__image {
-    width:540px;
-    height: 259px;
-}
-
-.construction__image img {
-    width: 100%;
-    height: 100%;
-}
-/*section-bottom start
-==============================*/
-
-.section-bottom {
-    background: #194a99 url('../images/footer_bg.png') no-repeat;
-    padding: 2em;
-    position: relative;
+/*section8*/
+.section8 {
+    background: url('../images/footer_bg.png') no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.bottom-title {
-    color: #dddddd;
-text-transform: uppercase;
-}
-/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
-@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
-/* End Fonts */
-/* Start Global rules */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/* End Global rules */
-
-/* Start body rules */
-body {
-    /*background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);*/
-    /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
-    /*background-attachment: fixed;*/
-    /*background-repeat: no-repeat;*/
-
-    font-family: 'Vibur', cursive;
-    /*   the main font */
-    font-family: 'Abel', sans-serif;
-    opacity: .95;
-    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+.contactus p{
+    font-size: 12px;
 }
 
-
-
-/* |||||||||||||||||||||||||||||||||||||||||||||*/
-/* //////////////////////////////////////////// */
-
-
-
-
-/* End body rules */
-
-/* Start form  attributes */
-.contact-form {
-    height: auto;
-    border-radius: 5px;
-    /*margin: 2% auto;*/
-    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
-    padding: 2%;
-    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
-}
-.inputfield{
-    height:35px
-}
-
-.con  .form-group{
-    margin-bottom: 0;
-}
-
-.form-label {
-    margin-bottom: 0;
-}
-
-.form-textarea{
-    height: 3em;
-}
-.footer-widget h3.title {
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #FEF9F9;
-    font-family: Raleway,serif;
-    margin: 0 0 24px;
-}
-
-.footer-widget.about-widget p {
-    color: #fff;
-    font-size: 16px;
-    margin: 0;
-}
-
-.footer-widget .contact {
-    margin-top: 21px;
-}
-.footer-widget ul {
-    margin: 0;
+.social {
+    list-style-type: none;
     padding: 0;
 }
-.footer-widget .contact li {
-    font-size: 13px;
-    color: #C9C9C9;
-    margin-bottom: 18px;
-    text-align: left;
-}
-.footer-widget ul li {
-    list-style: none;
-}
-
-.footer-widget .contact li i {
-    font-size: 16px;
-    color: #FFF;
-    width: 18px;
-    text-align: center;
-    padding-right: 18px;
-}
-
-.footer-widget .contact li i, .footer-widget .contact li span {
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff;
-    font-size: 16px;
-}
-
 
 .social li {
-    margin-bottom: 10px;
-    color: #fff;
-    list-style-type: none;
+    color: white;
+    padding: 0.2em 0;
 }
 
 .social li a {
@@ -390,14 +127,19 @@ body {
     background: #0077c0;
     border-color: #0077c0;
 }
-/*section footer start
-================================*/
-.section-footer {
-    background: #000;
-    padding: 1em;
-    color: #ffffff;
+/*section8 end*/
+
+
+/*
+===================================
+details page  start
+===================================
+*/
+.details{
+    height: 25em;
 }
 
-.section-footer>p {
-    font-size: 14px;
+.details img{
+    height: 100% !important;
+    width: 100% !important;
 }
